@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>#RankingMusica</title>
+  <meta name="description" content="Bienvenid@s a #RankingMusica">
+
+  <meta name="theme-color" content="#F0DB4F">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/png" href="./img/RankingMusica.png">
+  <link rel="apple-touch-icon" href="./img/RankingMusica.png">
+  <link rel="apple-touch-startup-image" href="./img/RankingMusica.png">
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+`
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+  <script type="text/javascript" src="modules/shadowbox.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <template id="my-paragraph">
+    <style>
+     h2{
+      font-family:'Franklin Gothic Medium' ;
+      color: white;
+      font-size: 60px;
+    }                 
+    </style>
+     <h2>Ranking de las 10 musicas mas escuchadas del 2020</h2>
+  </template>
+  
+  <template id="my-music">
+    <style>
+     h2{
+      font-family:'Franklin Gothic Medium' ;
+      color: black;
+      font-size: 50px;
+    }  
+    p{
+      color:blueviolet;
+      font-family: cursive;
+      font-size: 25px;
+    }   
+           
+    </style>
+   <h2><slot name="my-text">Caciones</slot></h2>
+   <p><slot name="my-cont">Artista</slot></p>
+  </template>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ranking</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     </div>  
+    </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+          <div class="container">
+        <h1 class="masthead-heading mb-0"></h1> 
+        <my-paragraph></my-paragraph>          
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+ 
+   <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <p align="center" ><a href="img/1TheWeeknd.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/1TheWeeknd.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+           <my-music> 
+               <span slot="my-text">1. Blinding Lights</span>
+               <span slot="my-cont">The Weeknd</span>
+          </my-music> 
+           <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+            Álbum: Blinding Lights 
+            Géneros: Synthwave, R&B/soul  
+            Nominaciones: MTV Video Music Award a la Mejor Canción del Verano"></music-info></p>
+          <p-musical data-img="data:image/png;base64,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" data-url="https://music.youtube.com/watch?v=J7p4bzqLvCw&list=RDAMVMJ7p4bzqLvCw"></p-musical>
+          <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" data-url="https://open.spotify.com/album/4LGF9lnbsOUpBAlUhAYGhk?highlight=spotify:track:6qjxnHeKO9DEMM6gfaoNUc"></p-musical>
+        </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+   
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <p align="center" ><a href="img/2everything.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/2everything.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <my-music>
+            <span slot="my-text">2. Everything i wanted</span>
+            <span slot="my-cont">Billie Eilish</span>
+            </my-music> 
+            <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+              Álbum: everything i wanted
+              Género: independiente
+              Nominaciones: Premio Grammy Award a la Mejor Interpretación Vocal Pop Solista 
+              "></music-info></p>
+            <p-musical data-img="data:image/png;base64,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" data-url="https://music.youtube.com/watch?v=iuINiqxtjhI&list=RDAMVMiuINiqxtjhI"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" data-url="https://open.spotify.com/album/2EjICwxFgXnRUDXcgk4mbk?highlight=spotify:track:59eP0PtaMa1KPmfut1ZPdl"></p-musical>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <p align="center" ><a href="img/3Adore.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/3Adore.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+              <my-music>
+              <span slot="my-text">3. Adore You</span>
+              <span slot="my-cont">Harry Style</span>
+            </my-music> 
+            <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+              Álbum: Fine Line
+              Género: Pop
+              Nominaciones: Premio Grammy al Mejor Video Musical"></music-info></p>
+            <p-musical data-img="data:image/png;base64,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" data-url="https://music.youtube.com/watch?v=vum2bUJwfkI&list=RDAMVMvum2bUJwfkI"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" data-url="https://open.spotify.com/album/7xV2TzoaVc0ycW7fwBwAml?highlight=spotify:track:3jjujdWJ72nww5eGnfs2E7"></p-musical>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <p align="center" ><a href="img/4InYourEyes.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/4InYourEyes.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+              <my-music>
+              <span slot="my-text">4. In Your Eyes</span>
+              <span slot="my-cont">The Weeknd</span>
+            </my-music>  
+            <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+              Álbum: After Hours
+              Fecha/lanzamiento: 2020
+              Género: R&B/soul"></music-info></p>
+            <p-musical data-img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX/AAD/////+vr/urr/8/P/2dn/Kyv/6en/+/v/hob/jY3/q6v/Jyf/f3//4+P/5ub/Njb/ICD/FRX/pqb/amr/xcX/VFT/39//7u7/Pj7/RET/goL/ycn/uLj/oqL/r6//YmL/1dX/l5f/S0v/W1v/d3f/nJz/YWH/ior/zs7/R0f/V1f/DQ3/aGj/cnL/OTnn4LI/AAAMb0lEQVR4nOWdeWO6PAzHQVSmDq95zHnhscNNf3v/7+7RFhwobdokFffs+7dCP0DbNElTz3euamc2XzSjwaZb7/X33r7fq3c3g6i5mM86Vfe391xePJwtXid9T6f+5HUxC102whVhGHy8aNHyevkIXGG6IAyXA/2LU7zOwdIFJTdhdTitI+hS1afDCnOLWAkrQUygSxUHrJCMhME7A57Ue8DXLC7C8ZQNT6oxZmoZD2Hrm5nvpO8lS9sYCJ+bDvCkms93QDgeOOM7aUD+WImE461TvpO2REYSYe3LOR+dkUDYcf/+zoydEggr3NODXlO0FYAlfLop30lPNyVc9W4O6Hm92u0IoxL4TopuRDgsie+k4S0I3c7wkP45J9ztSwX0vP3KLaE7E9RcTYeEz92y6YS6Vva4DeGsbLSzZm4I12VzZbR2QPiwKZsqp9EDN+HzY9lMF3o0dZcbEtbKBiqQoRFnRhiUTVMoMwPHiHBRNotCRssNE8J7BfS8BQ/hPc0SlzKYNWDCezDU1IJNOJDwvgENECHCe/5EpaAPFSC8vTvGXsCIqidclt16I+njG1rC+1lM6KVdaugIx2W33Fg6p7iGsFp2uy2kMcM1hJR4/K1VxxCOym61lUb2hPc/EealnBZVhGW6fXFSraUUhM9ltxchhQdOQfibRplUXRvCRtmtRalhTrgru61I7UwJH8puKVpFLsYiwrjshqJ1MCO8T8eamQry4QoIy24lSSaEr2U3kqRXmHDl8Pa9z9H74H306TLPYQUSurh7f9NorfIZzp1Vq7FxEU/uQYT8jpnXuTqhqTPn7xOXbpsLwgrv3R6bcPhk9cH82VxkT10QsmbKRKYZdzXWN3lhvOUJO3z3+Z5fk1TD9knhtc/hYcmYIpDv8XlCtmzDr1XuupXVcrrNfoy97XS5yn9OOzanwlZNyBUHnWRN4GoQTVS/i4Ls69xxZYvnekeOkCchtp8xncInFV2qyVNm5TpnaYD3pSLkeYWZUMnQ7JF9ZRwQPCvT7AieJeToCN/t9GqVN4u/Lc59cszhXhgVE3K4uM8vsGIblVuf13YcycfjQsID/cKr9FqYwPjZGGFwMRyKCEPyZV/SgXGHS76ppw+IIX8uLCAkB3vThUsV/zH8S7sj+XtqFhBSr/mWXIfmS04DZR/U5lwTtohXTI006jiRPnzqIqd1RUi0JwK2HpT2ZuIj/74kJE4VCSCPzTBmQRxfENKWTUkknctLl3RGWi5WdEFIulgyyDBZld45jkQz4fKEpKefPC3OxI3kqydNGkGOMCZcacP9Bk9K3iJl4IqzhBT3zF7O0twhVbnEJMUxKxlCykdaYxxFswrJDy7IEMb4y8j4uYPMlL58BQQnVfxDSPhIJ/T+olKyyCOk0FfOhIRPocMwm6okPw9CmGF4JsQ3cO1klEm1Ij6+6EyI/hB65JFYqz7x8o8pId4PPNTPy3Oqv35KNCXChBB9BTnXq3M0fd/GG1UkORWhnVPLhDCm3V/9oo5jWZU2CE1o/TxOCDElj06S3nPNaxKjdZvkpJQLa+zitS8J0S4o8Qp1qSmJ12VG2RVGe4mhIMSabLIX6hxYZzcvYTHbAnqCXoEgxHpWhuBQ/hNcqqCXenvSI2oIQih2or21Ng01Gz57jnG3kf4D7Jw4EYTIP0tzRvuTfIBwhTNepVXxD/XfUzf2/Dbyv2J1o+/Dl/VI5qjki5V4PKg2el77SIgcp+RMpZ8JriuuYHKrZRkF5JQ2PBIiE7rF1j9goimoKVNFfG4iKoUcqtZHwhj3V7FsAhzThVVzxtabwsWgjQxIHY6ElP4PDMOKukBDy9ltAI9pSnWPhLjUqw/xyQE/UlY+svT1iv/gPIt730N6WMSXA1lD6tpOFSuDfHX6C3LSr3rIgIUIn0BeIl31qtAid0dMvUhv3tjDTRZynxG0btPX59oZL/uETwqZfT70cMvfg0k3BAgtlt7i1zZVe38093CrcBGLATdgwjXWDEPrIoUFt5Z+83DhZBH/AkdEgypyz0Zlp8S4hosKf3i4JyPCj6A72qhOXs3g61sbfTKFijxc6a4Ho45hWAkwAKdk4fjEjfoD7xP1P9EysGHGtQ6hweDz9CPcGvHTQxltwmaDh2/zao5V/RcvXcOYlh75UL5I4aKBY3s29Sr1Ljk8Yd1D+XiELQy7yu0qcupccuJKKJddz0OtLAUh7BywrTnaUjZGZNmipvy+h1paOCJUGwBiNYrKQkfuWnFDuFP3GGHUIGtS3s07rOoAOmjCPa4fvp9uyDvS6Jd/+K+0jxtLxXIGjneYE46BaVmMNKiqfz0PNQSL5SFsYxgTgsYxfrao42wawxnY1C7lul+Ruh5uXSnuCH7gRoShQXzxEU/44uFcWKJfgD3fhNDIIS1yf3BxzgNyfSiCo6AbGibUTIFZiQ13OFdU5OG85SL4DLpZIELtFJiViLDhkh8/kH4asegGHe0AobkHdHX6OW67xBvS1yaSFMDpQks4tkg/EBfCZTzMkf5SObhBbdQQPtj0fxnJw8Xyh1iftxhMoVaqCe2yI8RAg0wZGWPjFoFJO1WEHUvnkHAmIrOsq9jYk/B+IWNP1kOG8OzhUmn36PihtGqAd1FIOLNezchUWlwzu/gYsFiTAuN9UZQbYUOJ2RA5XsTEOD7gbrsmRHnmRSQP2cw1NRdDv5X5krCG6hEyIR3ZmU65GNg9XSKfRv948oRWU2BGIgqEzfpp3zAnCpsgKLPLsDsu6XltWrM2Q2iyCizWE2EkTfLabpGbSKgzSfoApjfKL50RMtrlzj9sknDAkCOse4mSsBpjb3CSuAR6h77MEUbabaZ53rSdoLIXYjtxkuftx9jby1x9tRVWQSeVpqrTXmGaq4/ebyENRvWc6Feo5ZHkLkScP9D72W+B3zMjtyQrT8kl75v9RxpIZTCAtu9JLvXdlcWuAN0A0HnfE2F32IL4kPWaEefS6ZmQsLtO7mV1U2tRliXDWqRedv8hYXtdspHbRd3hZHsqoZzFzx5SP8ZfRRrgLmpHy/oYhKoDmX3ADHu5+UtmyoJTlOMZsnu5SbtAK05GG+b9+H5MuFDSFXlP+xiSO2G+pgJLXQzOY6GSYimkE0HzdTFYapvwvcWkcbRSSn6e8K7q0+w4PorL+jR3VGNon5TtY64xRK37kNaJok/9aZ0o4jd/VSeKrdYX1YBLK8jy1/piq9dG64xp5VMH9doYa+7F+Euk5SGd1Nyj1038TH1rtpvTEtXTF+iobiJH7ctzZVTMQH8+XIzhqLCBX0TIWr/0wXbd+nMcJUexm+L6pSw1aCc/NWhtGH8Kqdcc1qBlqmaVOXgpMMsIPdysjjBTLehepsHVJZQUup1nCl67rgXNVpLsc5W5aDV4VQ2Nk2iYPRlmxlVPS13Pm68m+zZ/YkBl14pGWadgb9u4qsnOdvD3e+66zurqbwpOCZN19TsFdfX9gKseu5fWHysmZD3Kqr9WnBN2pTbZRstKezYCd9mulyf16R2pxm/M5ez051vwn1Gyj4LQV6l9+zNKHJ0z87Ue1vKfbFgLmqNSzpm5xVlBL+WeFfT/P+/pD5zZ9QfOXeNYKJYkw7Pz/sD5h///Myz/wDmkbuoCu5bVWbJ/4DzgX3im80xBoiL8/5/L/QfOVv9dJ1fXi2ZCkNBdMhe/CvwiBoQOTgNwJd1RkjrCXzOgFji9DAkdnLvqQpd+CxtC1gwSV1roEQDCXzAtKidCQ0J6aNixmhAASHjniCCgASG5+r9LvcHNNyC84xFVP4qaEzKnHfJpCTfdkJAjd8CBVOslDCFLFgO3DE/9NiT0q5QTHFzoUWNsowj9B7YQLYtG6uUSlvC+JkZ4GsQQ3tFSQ7uYIBByZI9yqG4aPbcnZEiKZNCHXZMtCe/A4V/oumckJO4QIGsAN5BMWOqAYzPE4AldHQYIK4KbxkTo18qwcOo1uGFshPTUfnu14EaxEhLOqEKpYV2xl0zo+x22TEZQWzh5zAXhsTvypNxC+sJ1QA7CI6P7CNWIxEcmPDLGTvkORD4GQt8P3RmrTXVa4y0Jj1oyZvie9W3kaALFQ+j7Y2ylIpWmhm4YUFyERwXKCiDWei/IT8OKkfBoBbBAxgF6di8SK+FRlWFEsVkfoyErns9PeFK4PGAKrvQPLYah80ouCE8Kg4ZNZaCXhibfnSZXhEKd2dsAypDrDt5mBKsTllNCqWp7Nl80o8GmW+/1996+36t3N4OouZjP2qaOa4L+A5E5nrYZCdadAAAAAElFTkSuQmCC" data-url="https://music.youtube.com/watch?v=yRVotpLaCD4&list=RDAMVMyRVotpLaCD4"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" data-url="https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj?highlight=spotify:track:7szuecWAPwGoV1e5vGu8tl"></p-musical>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <p align="center" ><a href="img/5Physical.jpeg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/5Physical.jpeg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+              <my-music>
+              <span slot="my-text">5. Physical</span>
+              <span slot="my-cont">Dua Lipa</span>
+            </my-music>  
+            <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+              Álbum: Club Future Nostalgia(DJ Mix)
+              Fecha/lanzamiento: 2020
+              Género: Dance/electrónica"></music-info></p>
+            <p-musical data-img="data:image/png;base64,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" 
+            data-url="https://music.youtube.com/watch?v=9HDEHj2yzew&list=RDAMVM9HDEHj2yzew"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" 
+            data-url="https://open.spotify.com/album/3EpFK0BdQC9yjUs4Buljuu?highlight=spotify:track:7eFxsgvcmw068MRDOBuYf5"></p-musical>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <p align="center" ><a href="img/6Youshould.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/6Youshould.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <my-music>
+              <span slot="my-text">6. You should be sad</span>
+              <span slot="my-cont">Halsey</span>
+              </my-music> 
+              <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+                Álbum: Manic
+                Fecha/lanzamiento: 2020
+                Género: independiente
+                Nominaciones: MTV Video Music Award al Mejor Video Pop"></music-info></p>
+              <p-musical data-img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX/AAD/////+vr/urr/8/P/2dn/Kyv/6en/+/v/hob/jY3/q6v/Jyf/f3//4+P/5ub/Njb/ICD/FRX/pqb/amr/xcX/VFT/39//7u7/Pj7/RET/goL/ycn/uLj/oqL/r6//YmL/1dX/l5f/S0v/W1v/d3f/nJz/YWH/ior/zs7/R0f/V1f/DQ3/aGj/cnL/OTnn4LI/AAAMb0lEQVR4nOWdeWO6PAzHQVSmDq95zHnhscNNf3v/7+7RFhwobdokFffs+7dCP0DbNElTz3euamc2XzSjwaZb7/X33r7fq3c3g6i5mM86Vfe391xePJwtXid9T6f+5HUxC102whVhGHy8aNHyevkIXGG6IAyXA/2LU7zOwdIFJTdhdTitI+hS1afDCnOLWAkrQUygSxUHrJCMhME7A57Ue8DXLC7C8ZQNT6oxZmoZD2Hrm5nvpO8lS9sYCJ+bDvCkms93QDgeOOM7aUD+WImE461TvpO2REYSYe3LOR+dkUDYcf/+zoydEggr3NODXlO0FYAlfLop30lPNyVc9W4O6Hm92u0IoxL4TopuRDgsie+k4S0I3c7wkP45J9ztSwX0vP3KLaE7E9RcTYeEz92y6YS6Vva4DeGsbLSzZm4I12VzZbR2QPiwKZsqp9EDN+HzY9lMF3o0dZcbEtbKBiqQoRFnRhiUTVMoMwPHiHBRNotCRssNE8J7BfS8BQ/hPc0SlzKYNWDCezDU1IJNOJDwvgENECHCe/5EpaAPFSC8vTvGXsCIqidclt16I+njG1rC+1lM6KVdaugIx2W33Fg6p7iGsFp2uy2kMcM1hJR4/K1VxxCOym61lUb2hPc/EealnBZVhGW6fXFSraUUhM9ltxchhQdOQfibRplUXRvCRtmtRalhTrgru61I7UwJH8puKVpFLsYiwrjshqJ1MCO8T8eamQry4QoIy24lSSaEr2U3kqRXmHDl8Pa9z9H74H306TLPYQUSurh7f9NorfIZzp1Vq7FxEU/uQYT8jpnXuTqhqTPn7xOXbpsLwgrv3R6bcPhk9cH82VxkT10QsmbKRKYZdzXWN3lhvOUJO3z3+Z5fk1TD9knhtc/hYcmYIpDv8XlCtmzDr1XuupXVcrrNfoy97XS5yn9OOzanwlZNyBUHnWRN4GoQTVS/i4Ls69xxZYvnekeOkCchtp8xncInFV2qyVNm5TpnaYD3pSLkeYWZUMnQ7JF9ZRwQPCvT7AieJeToCN/t9GqVN4u/Lc59cszhXhgVE3K4uM8vsGIblVuf13YcycfjQsID/cKr9FqYwPjZGGFwMRyKCEPyZV/SgXGHS76ppw+IIX8uLCAkB3vThUsV/zH8S7sj+XtqFhBSr/mWXIfmS04DZR/U5lwTtohXTI006jiRPnzqIqd1RUi0JwK2HpT2ZuIj/74kJE4VCSCPzTBmQRxfENKWTUkknctLl3RGWi5WdEFIulgyyDBZld45jkQz4fKEpKefPC3OxI3kqydNGkGOMCZcacP9Bk9K3iJl4IqzhBT3zF7O0twhVbnEJMUxKxlCykdaYxxFswrJDy7IEMb4y8j4uYPMlL58BQQnVfxDSPhIJ/T+olKyyCOk0FfOhIRPocMwm6okPw9CmGF4JsQ3cO1klEm1Ij6+6EyI/hB65JFYqz7x8o8pId4PPNTPy3Oqv35KNCXChBB9BTnXq3M0fd/GG1UkORWhnVPLhDCm3V/9oo5jWZU2CE1o/TxOCDElj06S3nPNaxKjdZvkpJQLa+zitS8J0S4o8Qp1qSmJ12VG2RVGe4mhIMSabLIX6hxYZzcvYTHbAnqCXoEgxHpWhuBQ/hNcqqCXenvSI2oIQih2or21Ng01Gz57jnG3kf4D7Jw4EYTIP0tzRvuTfIBwhTNepVXxD/XfUzf2/Dbyv2J1o+/Dl/VI5qjki5V4PKg2el77SIgcp+RMpZ8JriuuYHKrZRkF5JQ2PBIiE7rF1j9goimoKVNFfG4iKoUcqtZHwhj3V7FsAhzThVVzxtabwsWgjQxIHY6ElP4PDMOKukBDy9ltAI9pSnWPhLjUqw/xyQE/UlY+svT1iv/gPIt730N6WMSXA1lD6tpOFSuDfHX6C3LSr3rIgIUIn0BeIl31qtAid0dMvUhv3tjDTRZynxG0btPX59oZL/uETwqZfT70cMvfg0k3BAgtlt7i1zZVe38093CrcBGLATdgwjXWDEPrIoUFt5Z+83DhZBH/AkdEgypyz0Zlp8S4hosKf3i4JyPCj6A72qhOXs3g61sbfTKFijxc6a4Ho45hWAkwAKdk4fjEjfoD7xP1P9EysGHGtQ6hweDz9CPcGvHTQxltwmaDh2/zao5V/RcvXcOYlh75UL5I4aKBY3s29Sr1Ljk8Yd1D+XiELQy7yu0qcupccuJKKJddz0OtLAUh7BywrTnaUjZGZNmipvy+h1paOCJUGwBiNYrKQkfuWnFDuFP3GGHUIGtS3s07rOoAOmjCPa4fvp9uyDvS6Jd/+K+0jxtLxXIGjneYE46BaVmMNKiqfz0PNQSL5SFsYxgTgsYxfrao42wawxnY1C7lul+Ruh5uXSnuCH7gRoShQXzxEU/44uFcWKJfgD3fhNDIIS1yf3BxzgNyfSiCo6AbGibUTIFZiQ13OFdU5OG85SL4DLpZIELtFJiViLDhkh8/kH4asegGHe0AobkHdHX6OW67xBvS1yaSFMDpQks4tkg/EBfCZTzMkf5SObhBbdQQPtj0fxnJw8Xyh1iftxhMoVaqCe2yI8RAg0wZGWPjFoFJO1WEHUvnkHAmIrOsq9jYk/B+IWNP1kOG8OzhUmn36PihtGqAd1FIOLNezchUWlwzu/gYsFiTAuN9UZQbYUOJ2RA5XsTEOD7gbrsmRHnmRSQP2cw1NRdDv5X5krCG6hEyIR3ZmU65GNg9XSKfRv948oRWU2BGIgqEzfpp3zAnCpsgKLPLsDsu6XltWrM2Q2iyCizWE2EkTfLabpGbSKgzSfoApjfKL50RMtrlzj9sknDAkCOse4mSsBpjb3CSuAR6h77MEUbabaZ53rSdoLIXYjtxkuftx9jby1x9tRVWQSeVpqrTXmGaq4/ebyENRvWc6Feo5ZHkLkScP9D72W+B3zMjtyQrT8kl75v9RxpIZTCAtu9JLvXdlcWuAN0A0HnfE2F32IL4kPWaEefS6ZmQsLtO7mV1U2tRliXDWqRedv8hYXtdspHbRd3hZHsqoZzFzx5SP8ZfRRrgLmpHy/oYhKoDmX3ADHu5+UtmyoJTlOMZsnu5SbtAK05GG+b9+H5MuFDSFXlP+xiSO2G+pgJLXQzOY6GSYimkE0HzdTFYapvwvcWkcbRSSn6e8K7q0+w4PorL+jR3VGNon5TtY64xRK37kNaJok/9aZ0o4jd/VSeKrdYX1YBLK8jy1/piq9dG64xp5VMH9doYa+7F+Euk5SGd1Nyj1038TH1rtpvTEtXTF+iobiJH7ctzZVTMQH8+XIzhqLCBX0TIWr/0wXbd+nMcJUexm+L6pSw1aCc/NWhtGH8Kqdcc1qBlqmaVOXgpMMsIPdysjjBTLehepsHVJZQUup1nCl67rgXNVpLsc5W5aDV4VQ2Nk2iYPRlmxlVPS13Pm68m+zZ/YkBl14pGWadgb9u4qsnOdvD3e+66zurqbwpOCZN19TsFdfX9gKseu5fWHysmZD3Kqr9WnBN2pTbZRstKezYCd9mulyf16R2pxm/M5ez051vwn1Gyj4LQV6l9+zNKHJ0z87Ue1vKfbFgLmqNSzpm5xVlBL+WeFfT/P+/pD5zZ9QfOXeNYKJYkw7Pz/sD5h///Myz/wDmkbuoCu5bVWbJ/4DzgX3im80xBoiL8/5/L/QfOVv9dJ1fXi2ZCkNBdMhe/CvwiBoQOTgNwJd1RkjrCXzOgFji9DAkdnLvqQpd+CxtC1gwSV1roEQDCXzAtKidCQ0J6aNixmhAASHjniCCgASG5+r9LvcHNNyC84xFVP4qaEzKnHfJpCTfdkJAjd8CBVOslDCFLFgO3DE/9NiT0q5QTHFzoUWNsowj9B7YQLYtG6uUSlvC+JkZ4GsQQ3tFSQ7uYIBByZI9yqG4aPbcnZEiKZNCHXZMtCe/A4V/oumckJO4QIGsAN5BMWOqAYzPE4AldHQYIK4KbxkTo18qwcOo1uGFshPTUfnu14EaxEhLOqEKpYV2xl0zo+x22TEZQWzh5zAXhsTvypNxC+sJ1QA7CI6P7CNWIxEcmPDLGTvkORD4GQt8P3RmrTXVa4y0Jj1oyZvie9W3kaALFQ+j7Y2ylIpWmhm4YUFyERwXKCiDWei/IT8OKkfBoBbBAxgF6di8SK+FRlWFEsVkfoyErns9PeFK4PGAKrvQPLYah80ouCE8Kg4ZNZaCXhibfnSZXhEKd2dsAypDrDt5mBKsTllNCqWp7Nl80o8GmW+/1996+36t3N4OouZjP2qaOa4L+A5E5nrYZCdadAAAAAElFTkSuQmCC" 
+              data-url="https://music.youtube.com/watch?v=DlaVY_S75CM&list=RDAMVMDlaVY_S75CM"></p-musical>
+              <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" 
+              data-url="https://open.spotify.com/album/1BOVmOHQwc3cYK9YRy7Zr2"></p-musical>                        
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <p align="center" ><a href="img/7StopthisFlame.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/7StopthisFlame.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+              <my-music>
+              <span slot="my-text">7. Stop This Flame</span>
+              <span slot="my-cont">Celeste</span>
+              </my-music> 
+              <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+                Álbum: Stop This Flame(Remixes)
+                Fecha/lanzamiento: 2020
+                Género: Pop"></music-info></p>
+              <p-musical data-img="data:image/png;base64,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" 
+              data-url="https://music.youtube.com/watch?v=3VlRbQvwpxc&list=RDAMVM3VlRbQvwpxc"></p-musical>
+              <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" 
+              data-url="https://open.spotify.com/album/2dgxfbASZ7HDFEGFRNwbTr?highlight=spotify:track:1bObrsJGW0UCIGZkvnDqbe"></p-musical>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <p align="center" ><a href="img/8Hipnotized.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/8Hipnotized.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+              <my-music>
+              <span slot="my-text">8. Hypnotized</span>
+              <span slot="my-cont">Purple Disco Machine, Shophie and the Giants</span>
+              </my-music> 
+              <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+                Álbum: Hypnotized
+                Fecha/lanzamiento: 2020
+                Género: Dance/electrónica"></music-info></p>
+            <p-musical data-img="data:image/png;base64,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" 
+            data-url="https://music.youtube.com/watch?v=BzL2nMQO3mM&list=RDAMVMBzL2nMQO3mM"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" 
+            data-url="https://open.spotify.com/album/07UKVsstXPhVacXjjPJAJh?highlight=spotify:track:0OeFuOAu0P1ONYz5EDdqb2"></p-musical>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <p align="center" ><a href="img/9WatermelonSugar.jpg" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/9WatermelonSugar.jpg" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+             <my-music>
+              <span slot="my-text">9. Watermelon Sugar</span>
+              <span slot="my-cont">Harry Styles</span>
+            </my-music> 
+            <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+              Álbum: Fine Line
+              Fecha/lanzamiento: 2019
+              Género: Pop
+              Nominaciones: Premio Grammy Award a la Mejor Interpretación Vocal Pop Solista"></music-info></p>
+            <p-musical data-img="data:image/png;base64,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" 
+            data-url="https://music.youtube.com/watch?v=KPM_BYl-EaQ&list=RDAMVMKPM_BYl-EaQ"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" 
+            data-url="https://open.spotify.com/album/659e2eKbsMH0vYCs5qgFmy?highlight=spotify:track:1e9oZCCiX42nJl0AcqriVo"></p-musical>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <p align="center" ><a href="img/10Roses.png" rel="shadowbox"><img class="img-fluid rounded-circle" src="img/10Roses.png" alt=""></a></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+              <my-music>
+              <span slot="my-text">10. Roses - Remix Imanbek</span>
+              <span slot="my-cont">SAINt JHN, Imanbek</span>
+            </my-music> 
+            <p> <music-info img="https://clublecturascifi.files.wordpress.com/2016/10/info-la-wash.png?w=238" text=" 
+              Álbum: Collection One
+              Fecha/lanzamiento: 2018
+              Género: Dance/electrónica
+              Nominaciones: MTV Video Music Award a la Mejor Canción del Verano"></music-info></p>
+            <p-musical data-img="data:image/png;base64,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" 
+            data-url="https://music.youtube.com/watch?v=hOwnPheF0kI&list=RDAMVMhOwnPheF0kI"></p-musical>
+            <p-musical data-img="https://cdn.smehost.net/sonymusiccommx-mxprod/wp-content/uploads/2019/08/SPOTIFY-PNG.png" 
+            data-url="https://open.spotify.com/album/6XcYTEonLIpg9NpAbJnqrC?highlight=spotify:track:2Wo6QQD1KMDWeFkkjLqwx5"></p-musical>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2020</p>
+    </div>
+    <app-element></app-element>
+
+    <!-- /.container -->
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="template.js"></script>
+  <script src="custom.js"></script>
+  <script src="ShadowDOM.js"></script>
+  <script src="./script.js"></script>
+
+
+
+</body>
+
+</html>
